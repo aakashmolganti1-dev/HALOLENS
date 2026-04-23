@@ -3,17 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Halo Lens | A Silent Storytelling | Cinematic Photography</title>
-
-<meta name="description" content="Halo Lens - A Silent Storytelling. Premium cinematic photography for weddings, portraits, and events. Based in India. Book your shoot today.">
-<meta name="keywords" content="photographer, wedding photographer, cinematic photography, portrait photography, event photography, Halo Lens">
-<meta name="author" content="Halo Lens">
+<title>Halo Lens | A Silent Storytelling</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;}
 body{font-family:Poppins,sans-serif;background:#0a0a0a;color:#fff;overflow-x:hidden}
 
 /* HEADER */
@@ -33,18 +29,23 @@ gap:12px;
 }
 
 .brand img{
-height:45px;
+height:50px;
 width:auto;
-filter:brightness(1.1) contrast(1.1);
+border-radius:8px;
 }
 
 .brand h1{
 font-family:'Playfair Display',serif;
-font-size:22px;
-letter-spacing:1px;
+font-size:20px;
 }
 
-nav a{margin-left:20px;color:#aaa;text-decoration:none;font-size:14px}
+/* NAV */
+nav a{
+margin-left:20px;
+color:#aaa;
+text-decoration:none;
+font-size:14px;
+}
 nav a:hover{color:#fff}
 
 /* HERO */
@@ -58,27 +59,21 @@ text-align:center;
 background:url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d') center/cover;
 position:relative;
 }
-
 .hero::after{
 content:'';
 position:absolute;
 top:0;left:0;width:100%;height:100%;
 background:rgba(0,0,0,0.55);
 }
-
 .hero-content{
 position:relative;
 z-index:2;
 }
-
 .hero h2{
 font-size:58px;
 font-family:'Playfair Display',serif;
 }
-
-.hero p{
-color:#ddd;margin-top:10px;
-}
+.hero p{color:#ddd;margin-top:10px;}
 
 .btn{
 margin-top:20px;
@@ -90,8 +85,8 @@ text-decoration:none;
 font-weight:500;
 }
 
+/* SECTIONS */
 section{padding:100px 60px}
-
 h2{
 font-family:'Playfair Display',serif;
 margin-bottom:20px;
@@ -103,25 +98,15 @@ display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:15px;
 }
-
 .gallery img{
-width:100%;height:300px;
+width:100%;
+height:300px;
 object-fit:cover;
 border-radius:12px;
+transition:0.3s;
 }
-
-/* CARDS */
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:20px;
-}
-
-.card{
-background:#111;
-padding:20px;
-border-radius:15px;
-border:1px solid #222;
+.gallery img:hover{
+transform:scale(1.05);
 }
 
 /* INSTAGRAM */
@@ -130,7 +115,6 @@ display:grid;
 grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
 gap:12px;
 }
-
 .instagram img{
 width:100%;
 border-radius:10px;
@@ -147,7 +131,7 @@ text-decoration:none;
 .wa{background:#25D366;color:#000}
 .ig{background:#E1306C;color:#fff}
 
-/* FLOAT BUTTONS */
+/* FLOAT */
 .float{
 position:fixed;
 right:20px;
@@ -166,6 +150,12 @@ border-top:1px solid #222;
 color:#888;
 }
 
+/* MOBILE */
+@media(max-width:768px){
+header{padding:15px 20px;}
+.hero h2{font-size:36px;}
+section{padding:80px 20px;}
+}
 </style>
 </head>
 
@@ -173,9 +163,10 @@ color:#888;
 
 <header>
 <div class="brand">
-<img src="/mnt/data/logo.png" alt="Halo Lens Logo">
+<img src="logo.png" alt="Halo Lens Logo">
 <h1>Halo Lens</h1>
 </div>
+
 <nav>
 <a href="#about">About</a>
 <a href="#portfolio">Portfolio</a>
@@ -197,20 +188,10 @@ color:#888;
 <section id="about">
 <h2>About Halo Lens</h2>
 <p>
-What began as a simple fascination with capturing family gatherings and preserving memories gradually evolved into a deeper purpose—realizing that true happiness lies in freezing meaningful moments in time.
+What began as a simple fascination with capturing moments evolved into a deeper purpose—
+freezing meaningful memories in time.
 <br><br>
-From my early journey as a freelance photographer, I have grown into a professional photographer, and today I am proud to lead a passionate team that shares the same vision. Building this team feels like a dream come true—turning what was once a personal passion into a collective pursuit of storytelling through images.
-<br><br>
-Together, we are dedicated to transforming real emotions into timeless visual stories that can be cherished forever.
-</p>
-
-<h3 style="margin-top:25px;font-family:'Playfair Display',serif;">Halo Lens – A Silent Storytelling</h3>
-<p>
-Halo Lens is where light meets emotion. We believe every moment has a quiet story waiting to be seen, not spoken.
-<br><br>
-Through our lens, we capture natural, honest, and timeless memories that reflect the true essence of life.
-<br><br>
-No loud poses, just real emotions—told softly through light, shadow, and detail.
+Today, Halo Lens is a collective vision of storytelling through light, emotion, and detail.
 </p>
 </section>
 
@@ -231,12 +212,12 @@ No loud poses, just real emotions—told softly through light, shadow, and detai
 <section id="contact">
 <h2>Contact</h2>
 <p>📞 +91 9640316902</p>
-<p>📧 yourgmail@gmail.com</p>
-<p>📸 @yourinstagram</p>
+<p>📧 halolensstory@gmail.com</p>
+<p>📸 @s.r_photography@1216</p>
 
 <div class="socials">
 <a class="wa" href="https://wa.me/919640316902" target="_blank">WhatsApp</a>
-<a class="ig" href="https://instagram.com/yourinstagram" target="_blank">Instagram</a>
+<a class="ig" href="https://instagram.com/s.r_photography.1216" target="_blank">Instagram</a>
 </div>
 </section>
 
@@ -244,9 +225,8 @@ No loud poses, just real emotions—told softly through light, shadow, and detai
 © 2026 Halo Lens. All Rights Reserved.
 </footer>
 
-<!-- FLOATING BUTTONS -->
 <a class="float float-wa" href="https://wa.me/919640316902">WhatsApp</a>
-<a class="float float-ig" href="https://instagram.com/yourinstagram">Instagram</a>
+<a class="float float-ig" href="https://instagram.com/s.r_photography.1216">Instagram</a>
 
 <script>
 // Portfolio Upload
@@ -263,7 +243,7 @@ reader.readAsDataURL(file);
 }
 });
 
-// Demo Instagram Feed
+// Instagram Demo
 const insta=document.getElementById('insta');
 for(let i=1;i<=6;i++){
 const img=document.createElement('img');

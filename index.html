@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Halo Lens | A Silent Storytelling | Photography</title>
+<title>Halo Lens | A Silent Storytelling | Cinematic Photography</title>
 
-<meta name="description" content="Halo Lens - A Silent Storytelling. Premium cinematic photography for weddings, portraits, and events. Book your shoot today.">
-<meta name="keywords" content="photographer, wedding photography, cinematic photography, Halo Lens, portrait photographer, event photography">
+<meta name="description" content="Halo Lens - A Silent Storytelling. Premium cinematic photography for weddings, portraits, and events. Based in India. Book your shoot today.">
+<meta name="keywords" content="photographer, wedding photographer, cinematic photography, portrait photography, event photography, Halo Lens">
 <meta name="author" content="Halo Lens">
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
@@ -19,14 +19,32 @@ body{font-family:Poppins,sans-serif;background:#0a0a0a;color:#fff;overflow-x:hid
 /* HEADER */
 header{
 position:fixed;top:0;width:100%;
-display:flex;justify-content:space-between;
-padding:20px 50px;
+display:flex;justify-content:space-between;align-items:center;
+padding:18px 50px;
 background:rgba(0,0,0,0.6);
-backdrop-filter:blur(10px);
+backdrop-filter:blur(12px);
 z-index:1000;
 }
-header h1{font-family:Playfair Display}
-nav a{margin-left:20px;color:#aaa;text-decoration:none}
+
+.brand{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.brand img{
+height:45px;
+width:auto;
+filter:brightness(1.1) contrast(1.1);
+}
+
+.brand h1{
+font-family:'Playfair Display',serif;
+font-size:22px;
+letter-spacing:1px;
+}
+
+nav a{margin-left:20px;color:#aaa;text-decoration:none;font-size:14px}
 nav a:hover{color:#fff}
 
 /* HERO */
@@ -38,23 +56,46 @@ justify-content:center;
 align-items:center;
 text-align:center;
 background:url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d') center/cover;
+position:relative;
 }
-.hero h2{font-size:60px;font-family:Playfair Display}
-.hero p{color:#ddd;margin-top:10px}
+
+.hero::after{
+content:'';
+position:absolute;
+top:0;left:0;width:100%;height:100%;
+background:rgba(0,0,0,0.55);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+}
+
+.hero h2{
+font-size:58px;
+font-family:'Playfair Display',serif;
+}
+
+.hero p{
+color:#ddd;margin-top:10px;
+}
 
 .btn{
 margin-top:20px;
-padding:12px 30px;
+padding:12px 28px;
 background:#fff;
 color:#000;
 border-radius:30px;
 text-decoration:none;
+font-weight:500;
 }
 
-/* SECTIONS */
 section{padding:100px 60px}
 
-h2{font-family:Playfair Display;margin-bottom:20px}
+h2{
+font-family:'Playfair Display',serif;
+margin-bottom:20px;
+}
 
 /* GALLERY */
 .gallery{
@@ -62,10 +103,11 @@ display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:15px;
 }
+
 .gallery img{
 width:100%;height:300px;
 object-fit:cover;
-border-radius:10px;
+border-radius:12px;
 }
 
 /* CARDS */
@@ -74,6 +116,7 @@ display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:20px;
 }
+
 .card{
 background:#111;
 padding:20px;
@@ -82,35 +125,36 @@ border:1px solid #222;
 }
 
 /* INSTAGRAM */
-.instagram-feed{
+.instagram{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:10px;
+gap:12px;
 }
-.instagram-feed img{
+
+.instagram img{
 width:100%;
 border-radius:10px;
 }
 
-/* SOCIAL BUTTONS */
+/* CONTACT */
 .socials a{
 display:inline-block;
 margin:10px;
-padding:12px 20px;
+padding:12px 18px;
 border-radius:30px;
 text-decoration:none;
 }
 .wa{background:#25D366;color:#000}
 .ig{background:#E1306C;color:#fff}
 
-/* FLOATING BUTTONS */
+/* FLOAT BUTTONS */
 .float{
 position:fixed;
 right:20px;
 padding:14px 18px;
 border-radius:50px;
-text-decoration:none;
 z-index:999;
+text-decoration:none;
 }
 .float-wa{bottom:20px;background:#25D366;color:#000}
 .float-ig{bottom:80px;background:#E1306C;color:#fff}
@@ -119,15 +163,19 @@ footer{
 text-align:center;
 padding:30px;
 border-top:1px solid #222;
-color:#777;
+color:#888;
 }
+
 </style>
 </head>
 
 <body>
 
 <header>
+<div class="brand">
+<img src="/mnt/data/logo.png" alt="Halo Lens Logo">
 <h1>Halo Lens</h1>
+</div>
 <nav>
 <a href="#about">About</a>
 <a href="#portfolio">Portfolio</a>
@@ -138,17 +186,31 @@ color:#777;
 
 <!-- HERO -->
 <section class="hero">
+<div class="hero-content">
 <h2>A Silent Storytelling</h2>
-<p>Premium cinematic photography experience</p>
+<p>Premium cinematic photography for timeless memories</p>
 <a class="btn" href="#contact">Book Now</a>
+</div>
 </section>
 
 <!-- ABOUT -->
 <section id="about">
-<h2>About</h2>
+<h2>About Halo Lens</h2>
 <p>
-Halo Lens is a cinematic photography brand specializing in weddings, portraits, and events.
-We capture emotions, not just pictures.
+What began as a simple fascination with capturing family gatherings and preserving memories gradually evolved into a deeper purpose—realizing that true happiness lies in freezing meaningful moments in time.
+<br><br>
+From my early journey as a freelance photographer, I have grown into a professional photographer, and today I am proud to lead a passionate team that shares the same vision. Building this team feels like a dream come true—turning what was once a personal passion into a collective pursuit of storytelling through images.
+<br><br>
+Together, we are dedicated to transforming real emotions into timeless visual stories that can be cherished forever.
+</p>
+
+<h3 style="margin-top:25px;font-family:'Playfair Display',serif;">Halo Lens – A Silent Storytelling</h3>
+<p>
+Halo Lens is where light meets emotion. We believe every moment has a quiet story waiting to be seen, not spoken.
+<br><br>
+Through our lens, we capture natural, honest, and timeless memories that reflect the true essence of life.
+<br><br>
+No loud poses, just real emotions—told softly through light, shadow, and detail.
 </p>
 </section>
 
@@ -162,23 +224,7 @@ We capture emotions, not just pictures.
 <!-- INSTAGRAM -->
 <section id="instagram">
 <h2>Instagram Feed</h2>
-<div class="instagram-feed" id="insta"></div>
-</section>
-
-<!-- REVIEWS -->
-<section>
-<h2>Client Reviews</h2>
-<div class="cards" id="reviews"></div>
-</section>
-
-<!-- PACKAGES -->
-<section>
-<h2>Packages</h2>
-<div class="cards">
-<div class="card">Basic Shoot</div>
-<div class="card">Premium Wedding</div>
-<div class="card">Luxury Cinematic Package</div>
-</div>
+<div class="instagram" id="insta"></div>
 </section>
 
 <!-- CONTACT -->
@@ -186,42 +232,42 @@ We capture emotions, not just pictures.
 <h2>Contact</h2>
 <p>📞 +91 9640316902</p>
 <p>📧 yourgmail@gmail.com</p>
-<p>📸 Instagram: @yourinstagram</p>
+<p>📸 @yourinstagram</p>
 
 <div class="socials">
-<a class="wa" href="https://wa.me/919640316902?text=Hi%20I%20want%20to%20book%20a%20shoot" target="_blank">WhatsApp</a>
+<a class="wa" href="https://wa.me/919640316902" target="_blank">WhatsApp</a>
 <a class="ig" href="https://instagram.com/yourinstagram" target="_blank">Instagram</a>
 </div>
 </section>
 
 <footer>
-© 2026 Halo Lens. All rights reserved.
+© 2026 Halo Lens. All Rights Reserved.
 </footer>
 
 <!-- FLOATING BUTTONS -->
-<a class="float float-wa" href="https://wa.me/919640316902?text=Hi%20I%20want%20to%20book%20a%20shoot">WhatsApp</a>
+<a class="float float-wa" href="https://wa.me/919640316902">WhatsApp</a>
 <a class="float float-ig" href="https://instagram.com/yourinstagram">Instagram</a>
 
 <script>
-// Portfolio upload
-const gallery=document.getElementById("gallery");
-document.getElementById("upload").addEventListener("change",e=>{
-for(let f of e.target.files){
-let r=new FileReader();
-r.onload=ev=>{
-let img=document.createElement("img");
+// Portfolio Upload
+const gallery=document.getElementById('gallery');
+document.getElementById('upload').addEventListener('change',e=>{
+for(let file of e.target.files){
+const reader=new FileReader();
+reader.onload=ev=>{
+const img=document.createElement('img');
 img.src=ev.target.result;
 gallery.appendChild(img);
-}
-r.readAsDataURL(f);
+};
+reader.readAsDataURL(file);
 }
 });
 
-// Demo Instagram (replace later with API)
-const insta=document.getElementById("insta");
+// Demo Instagram Feed
+const insta=document.getElementById('insta');
 for(let i=1;i<=6;i++){
-let img=document.createElement("img");
-img.src="https://source.unsplash.com/400x400/?photography,portrait"+i;
+const img=document.createElement('img');
+img.src=`https://source.unsplash.com/400x400/?photography,portrait&sig=${i}`;
 insta.appendChild(img);
 }
 </script>

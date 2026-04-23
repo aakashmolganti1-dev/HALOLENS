@@ -12,7 +12,6 @@
 html{scroll-behavior:smooth;}
 body{font-family:Poppins,sans-serif;background:#0a0a0a;color:#fff;overflow-x:hidden}
 
-/* HEADER */
 header{
 position:fixed;top:0;width:100%;
 display:flex;justify-content:space-between;align-items:center;
@@ -22,33 +21,13 @@ backdrop-filter:blur(12px);
 z-index:1000;
 }
 
-.brand{
-display:flex;
-align-items:center;
-gap:12px;
-}
+.brand{display:flex;align-items:center;gap:12px;}
+.brand img{height:50px;width:auto;border-radius:8px;}
+.brand h1{font-family:'Playfair Display',serif;font-size:20px;}
 
-.brand img{
-height:50px;
-width:auto;
-border-radius:8px;
-}
-
-.brand h1{
-font-family:'Playfair Display',serif;
-font-size:20px;
-}
-
-/* NAV */
-nav a{
-margin-left:20px;
-color:#aaa;
-text-decoration:none;
-font-size:14px;
-}
+nav a{margin-left:20px;color:#aaa;text-decoration:none;font-size:14px}
 nav a:hover{color:#fff}
 
-/* HERO */
 .hero{
 height:100vh;
 display:flex;
@@ -65,14 +44,8 @@ position:absolute;
 top:0;left:0;width:100%;height:100%;
 background:rgba(0,0,0,0.55);
 }
-.hero-content{
-position:relative;
-z-index:2;
-}
-.hero h2{
-font-size:58px;
-font-family:'Playfair Display',serif;
-}
+.hero-content{position:relative;z-index:2;}
+.hero h2{font-size:58px;font-family:'Playfair Display',serif;}
 .hero p{color:#ddd;margin-top:10px;}
 
 .btn{
@@ -85,14 +58,9 @@ text-decoration:none;
 font-weight:500;
 }
 
-/* SECTIONS */
 section{padding:100px 60px}
-h2{
-font-family:'Playfair Display',serif;
-margin-bottom:20px;
-}
+h2{font-family:'Playfair Display',serif;margin-bottom:20px;}
 
-/* GALLERY */
 .gallery{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -105,22 +73,15 @@ object-fit:cover;
 border-radius:12px;
 transition:0.3s;
 }
-.gallery img:hover{
-transform:scale(1.05);
-}
+.gallery img:hover{transform:scale(1.05);}
 
-/* INSTAGRAM */
 .instagram{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
 gap:12px;
 }
-.instagram img{
-width:100%;
-border-radius:10px;
-}
+.instagram img{width:100%;border-radius:10px;}
 
-/* CONTACT */
 .socials a{
 display:inline-block;
 margin:10px;
@@ -131,7 +92,6 @@ text-decoration:none;
 .wa{background:#25D366;color:#000}
 .ig{background:#E1306C;color:#fff}
 
-/* FLOAT */
 .float{
 position:fixed;
 right:20px;
@@ -150,7 +110,6 @@ border-top:1px solid #222;
 color:#888;
 }
 
-/* MOBILE */
 @media(max-width:768px){
 header{padding:15px 20px;}
 .hero h2{font-size:36px;}
@@ -175,7 +134,6 @@ section{padding:80px 20px;}
 </nav>
 </header>
 
-<!-- HERO -->
 <section class="hero">
 <div class="hero-content">
 <h2>A Silent Storytelling</h2>
@@ -184,7 +142,6 @@ section{padding:80px 20px;}
 </div>
 </section>
 
-<!-- ABOUT -->
 <section id="about">
 <h2>About Halo Lens</h2>
 <p>
@@ -195,29 +152,26 @@ Today, Halo Lens is a collective vision of storytelling through light, emotion, 
 </p>
 </section>
 
-<!-- PORTFOLIO -->
 <section id="portfolio">
 <h2>Portfolio</h2>
 <div class="gallery" id="gallery"></div>
 <input type="file" id="upload" multiple>
 </section>
 
-<!-- INSTAGRAM -->
 <section id="instagram">
 <h2>Instagram Feed</h2>
 <div class="instagram" id="insta"></div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
 <h2>Contact</h2>
 <p>📞 +91 9640316902</p>
 <p>📧 halolensstory@gmail.com</p>
-<p>📸 @s.r_photography@1216</p>
+<p>📸 @s.r_photography1216</p>
 
 <div class="socials">
 <a class="wa" href="https://wa.me/919640316902" target="_blank">WhatsApp</a>
-<a class="ig" href="https://instagram.com/s.r_photography.1216" target="_blank">Instagram</a>
+<a class="ig" href="https://instagram.com/s.r_photography1216" target="_blank">Instagram</a>
 </div>
 </section>
 
@@ -226,10 +180,9 @@ Today, Halo Lens is a collective vision of storytelling through light, emotion, 
 </footer>
 
 <a class="float float-wa" href="https://wa.me/919640316902">WhatsApp</a>
-<a class="float float-ig" href="https://instagram.com/s.r_photography.1216">Instagram</a>
+<a class="float float-ig" href="https://instagram.com/s.r_photography1216">Instagram</a>
 
 <script>
-// Portfolio Upload
 const gallery=document.getElementById('gallery');
 document.getElementById('upload').addEventListener('change',e=>{
 for(let file of e.target.files){
@@ -243,7 +196,6 @@ reader.readAsDataURL(file);
 }
 });
 
-// Instagram Demo
 const insta=document.getElementById('insta');
 for(let i=1;i<=6;i++){
 const img=document.createElement('img');
